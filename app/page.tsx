@@ -1,73 +1,66 @@
 export default function Home() {
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <section className="relative min-h-screen flex items-center px-24 overflow-hidden">
 
       {/* Lantern Background */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/lantern.jpg')" }}
-      />
-
-      {/* Dark Overlay for readability */}
-      <div className="absolute inset-0 bg-black/40" />
+        style={{
+          backgroundImage: "url('/lantern.jpg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-[#1E2A32]/70"></div>
+      </div>
 
       {/* Content */}
-      <div className="relative z-10 grid grid-cols-2 items-center min-h-screen px-24 text-white">
+      <div className="relative z-10 flex w-full justify-between items-center">
 
         {/* LEFT SIDE */}
-        <div className="space-y-10">
+        <div className="max-w-xl text-white">
 
-          <h1 className="text-7xl font-serif tracking-wide">
-            Bequestra
+          <h1 className="text-6xl font-serif mb-10">
+            Where coordination meets care
           </h1>
 
-          <h2 className="text-5xl font-serif font-bold leading-tight">
-            where coordination meets care
-          </h2>
+          <div className="space-y-6 text-lg">
 
-          {/* Checklist */}
-          <div className="space-y-6 pt-6 text-lg">
-
-            {/* Contact Funeral Home */}
-            <div className="flex items-center justify-between bg-white/10 backdrop-blur-sm px-6 py-4 rounded-full border border-white/30">
-              <div className="flex items-center space-x-3">
-                <span className="text-white">✔</span>
-                <span>Contact funeral home</span>
+            {/* Item 1 */}
+            <div className="flex items-center space-x-5">
+              <div className="h-6 w-6 rounded-full border-2 border-[#C6A85B] flex items-center justify-center">
+                <div className="h-2 w-2 bg-[#C6A85B] rounded-full"></div>
               </div>
-              <span>🏠</span>
+              <span>Contact Funeral Home</span>
             </div>
 
-            {/* Close Accounts */}
-            <div className="flex items-center justify-between bg-white/10 backdrop-blur-sm px-6 py-4 rounded-full border border-white/30">
-              <div className="flex items-center space-x-3">
-                <span className="text-white">✔</span>
-                <span>Close accounts</span>
+            {/* Item 2 */}
+            <div className="flex items-center space-x-5">
+              <div className="h-6 w-6 rounded-full border-2 border-[#C6A85B] flex items-center justify-center">
+                <div className="h-2 w-2 bg-[#C6A85B] rounded-full"></div>
               </div>
-              <span>📄</span>
+              <span>Close Accounts</span>
             </div>
 
-            {/* Make a Will */}
-            <div className="flex items-center justify-between bg-white/10 backdrop-blur-sm px-6 py-4 rounded-full border border-white/30">
-              <div className="flex items-center space-x-3">
-                <span className="text-white">✔</span>
-                <span>Make a will</span>
+            {/* Item 3 */}
+            <div className="flex items-center space-x-5">
+              <div className="h-6 w-6 rounded-full border-2 border-[#C6A85B] flex items-center justify-center">
+                <div className="h-2 w-2 bg-[#C6A85B] rounded-full"></div>
               </div>
-              <span>🖊</span>
+              <span>Make a Will</span>
             </div>
 
           </div>
         </div>
 
-        {/* RIGHT SIDE — Elderly Woman */}
-        <div className="flex justify-center">
+        {/* RIGHT SIDE IMAGE */}
+        <div>
           <img
             src="/elderly-woman.jpg"
-            alt="Elderly Woman"
+            alt="Elderly woman smiling"
             className="rounded-2xl shadow-2xl w-[450px] object-cover"
           />
         </div>
 
       </div>
-    </div>
+    </section>
   );
 }
