@@ -8,10 +8,10 @@ export default function FuneralHomesPage() {
         {/* Image behind the text: funeral director consoling a family */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <div className="relative w-full max-w-2xl aspect-[4/3] flex items-center justify-center">
-            {/* Replace src with /funeral-director-family.jpg when you add your own image to public */}
+            {/* Replace src with /funeral-home.jpg when you add your own image to public */}
             <img
-              src="https://images.unsplash.com/photo-1607400201889-565b1ee75f8e?w=900&q=80"
-              alt="Comforting a family in grief"
+              src="https://images.pexels.com/photos/4425794/pexels-photo-4425794.jpeg?auto=compress&cs=tinysrgb&w=900"
+              alt="Funeral"
               className="absolute inset-0 w-full h-full object-contain opacity-25"
             />
           </div>

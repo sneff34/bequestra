@@ -55,23 +55,23 @@ export default function RootLayout({
               <button>Families</button>
               <div className="absolute hidden group-hover:block bg-white shadow-lg mt-0 pt-2 top-full left-0 px-6 py-4 text-sm text-[#2F4F5F] rounded-lg space-y-2 whitespace-nowrap">
                 <Link href="/families/loss-support" className="block hover:text-[#1E2A32]">Loss Support</Link>
-                <Link href="#" className="block hover:text-[#1E2A32]">Legacy Planning</Link>
+                <Link href="/families/legacy-planning" className="block hover:text-[#1E2A32]">Bequest and legacy planning</Link>
               </div>
             </div>
 
-            {/* Resources */}
-            <div className="relative group">
+            {/* Resources - pb-2 extends hover zone so dropdown doesn't disappear in the gap */}
+            <div className="relative group pb-2">
               <button>Resources</button>
-              <div className="absolute hidden group-hover:block bg-white shadow-lg mt-3 px-6 py-4 text-sm text-[#2F4F5F] rounded-lg space-y-2 whitespace-nowrap">
-                <a href="#" className="block">Resource Center</a>
+              <div className="absolute hidden group-hover:block bg-white shadow-lg mt-0 pt-2 top-full left-0 px-6 py-4 text-sm text-[#2F4F5F] rounded-lg space-y-2 whitespace-nowrap">
+                <Link href="/resources" className="block hover:text-[#1E2A32]">Resource Center</Link>
               </div>
             </div>
 
-            {/* Company */}
-            <div className="relative group">
+            {/* Company - pb-2 extends hover zone so dropdown doesn't disappear in the gap */}
+            <div className="relative group pb-2">
               <button>Company</button>
-              <div className="absolute hidden group-hover:block bg-white shadow-lg mt-3 px-6 py-4 text-sm text-[#2F4F5F] rounded-lg space-y-2 whitespace-nowrap">
-                <Link href="/company" className="block">About Us</Link>
+              <div className="absolute hidden group-hover:block bg-white shadow-lg mt-0 pt-2 top-full left-0 px-6 py-4 text-sm text-[#2F4F5F] rounded-lg space-y-2 whitespace-nowrap">
+                <Link href="/company" className="block hover:text-[#1E2A32]">About Us</Link>
               </div>
             </div>
 
@@ -86,12 +86,12 @@ export default function RootLayout({
               Log In
             </a>
 
-            <a
-              href="#"
+            <Link
+              href="/book-demo"
               className="px-6 py-2 rounded-full bg-[#2F4F5F] text-white font-semibold hover:opacity-90 transition"
             >
               Book a Demo
-            </a>
+            </Link>
           </div>
 
         </nav>

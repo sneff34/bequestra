@@ -11,9 +11,18 @@ const items = [
     title: "Receive a step-by-step checklist",
     content: "checklist" as const,
   },
-  { title: "Handle logistics and administration", content: "placeholder" as const },
-  { title: "Nurture emotional needs", content: "placeholder" as const },
-  { title: "Constant access to support", content: "placeholder" as const },
+  {
+    title: "Handle logistics and administration",
+    content: "logistics" as const,
+  },
+  {
+    title: "Nurture emotional needs",
+    content: "emotional" as const,
+  },
+  {
+    title: "Constant access to support",
+    content: "access" as const,
+  },
 ];
 
 const PANEL_TRANSITION_MS = 350;
@@ -96,6 +105,30 @@ export function SupportChecklist() {
                     </div>
                   </div>
                 </div>
+              ) : item.content === "logistics" ? (
+                <div className="flex gap-8 items-start flex-wrap">
+                  <div className="flex-1 min-w-[280px] text-white/90 leading-relaxed">
+                    <p>
+                      Hands-on navigational support with the family. Whether it
+                      be finding a funeral home, an estate firm, closing your
+                      loved one&apos;s physical and digital accounts, or
+                      navigating probate—our time-saving infrastructure and
+                      tools will be by you for the entire process.
+                    </p>
+                  </div>
+                  <div className="shrink-0">
+                    <div className="w-64 rounded-2xl bg-[#E8C547] p-5 shadow-lg border border-[#d4af37]/30">
+                      <div className="rounded-xl overflow-hidden aspect-square w-full bg-white/20">
+                        {/* OpenStreetMap tile - © OpenStreetMap contributors */}
+                        <img
+                          src="https://tile.openstreetmap.org/6/10/23.png"
+                          alt="Map"
+                          className="w-full h-full object-cover opacity-90"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               ) : item.content === "checklist" ? (
                 <div className="flex gap-8 items-start flex-wrap">
                   <div className="flex-1 min-w-[280px] text-white/90 leading-relaxed">
@@ -119,6 +152,54 @@ export function SupportChecklist() {
                           <li>• Documentation care</li>
                           <li>• Insurance</li>
                         </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : item.content === "emotional" ? (
+                <div className="flex gap-8 items-start flex-wrap">
+                  <div className="flex-1 min-w-[280px] text-white/90 leading-relaxed">
+                    <p>
+                      Bequestra&apos;s technological support allows families to
+                      focus on the most important aspect: grieving. Rather than
+                      dealing with the stressful logistical processes, Bequestra&apos;s
+                      advanced support follows the family every step of the way
+                      and deploys ongoing support, therapy resources, and
+                      follow-on check-ins to ensure the process goes smoothly.
+                    </p>
+                  </div>
+                  <div className="shrink-0">
+                    <div className="w-64 rounded-2xl bg-[#E8C547] p-5 shadow-lg border border-[#d4af37]/30">
+                      <div className="rounded-xl overflow-hidden aspect-square w-full bg-white/20">
+                        <img
+                          src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&q=80"
+                          alt="Friendly therapist or counselor offering support"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : item.content === "access" ? (
+                <div className="flex gap-8 items-start flex-wrap">
+                  <div className="flex-1 min-w-[280px] text-white/90 leading-relaxed">
+                    <p>
+                      Our guide contains resources such as articles, reviews,
+                      and video and audio guides that cover the entirety of the
+                      loss process—from the death certificate to funeral
+                      planning, to taxes, to estate planning, to managing family
+                      dynamics—to ensure that the loss of a loved one is a
+                      positive process.
+                    </p>
+                  </div>
+                  <div className="shrink-0">
+                    <div className="w-64 rounded-2xl bg-[#E8C547] p-5 shadow-lg border border-[#d4af37]/30">
+                      <div className="rounded-xl overflow-hidden aspect-square w-full bg-white/20">
+                        <img
+                          src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&q=80"
+                          alt="Person guiding or supporting another through a process"
+                          className="w-full h-full object-cover"
+                        />
                       </div>
                     </div>
                   </div>
