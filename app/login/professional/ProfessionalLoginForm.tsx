@@ -2,12 +2,20 @@
 
 import { useRouter } from "next/navigation";
 
-export function ProfessionalLoginForm({ title }: { title: string }) {
+type DashboardType = "funeral-homes" | "law-firms" | "nursing-homes" | "hospice-centers";
+
+export function ProfessionalLoginForm({
+  title,
+  dashboardType,
+}: {
+  title: string;
+  dashboardType: DashboardType;
+}) {
   const router = useRouter();
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    router.push("/professional/dashboard");
+    router.push(`/professional/dashboard?type=${dashboardType}`);
   }
 
   return (
