@@ -18,9 +18,12 @@ export default function Home() {
         {/* LEFT SIDE */}
         <div className="max-w-xl text-white">
 
-          <h1 className="text-6xl font-serif mb-10">
-            Where coordination meets care
+          <h1 className="text-7xl font-light tracking-tight text-white/95 mb-3 font-[family-name:var(--font-warm)]">
+            Bequestra
           </h1>
+          <p className="text-3xl text-white/90 mb-10 font-normal font-[family-name:var(--font-warm)]">
+            Where Coordination Meets Care
+          </p>
 
           <div className="space-y-6 text-lg">
 
@@ -56,7 +59,7 @@ export default function Home() {
           <img
             src="/elderly-woman.jpg"
             alt="Elderly woman smiling"
-            className="rounded-2xl shadow-2xl w-[450px] object-cover"
+            className="rounded-2xl shadow-2xl w-[500px] object-cover"
           />
         </div>
 
